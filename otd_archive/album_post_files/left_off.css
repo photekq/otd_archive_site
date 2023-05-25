@@ -1,0 +1,20 @@
+@charset "utf-8";
+
+#container #sidebar {
+	font-size:0 !important;
+	display:none !important;
+	visibility:hide !important;
+}
+#container #content {
+	float:right;
+	margin-right:10px;
+	overflow:hidden;
+	width:920px !important;
+	padding-bottom:30px;
+	display:inline-block;
+}
+.view-img img {
+	max-width:900px !important;
+	width:expression(this.width > 900 ? 900: true); /* ie max-width hack */
+}
+

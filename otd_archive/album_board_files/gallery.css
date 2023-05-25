@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/*갤러리 감싸고 있는 영역*/
+#gallery{
+	width:900px;
+	margin:10px auto;
+	background-color:#fff;
+	overflow:hidden;
+	/*border:4px #ddd solid;*/
+	border:4px solid #fff;
+}
+
+/*메인이미지 나타나는 영역*/
+#main_image {
+	float:left;
+	margin-right:10px;
+	width:700px;
+	height:400px;
+	text-align:center;
+	position:relative;
+	z-index:99;
+	overflow:hidden;
+	margin-bottom:10px;
+}
+#bigThumb {
+	
+}
+/*
+#main_image{
+	width:870px;
+	height:350px;
+	position:relative;
+	overflow:hidden;
+	margin-bottom:10px;
+	background-position:50% 0;
+	background-repeat:no-repeat;
+}
+*/
+
+/*메인이미지 캡션*/
+#caption{
+	background-color:#000;
+	color:#fff;
+	width:700px;
+	padding:10px;
+	position:absolute;
+	z-index:97;
+	bottom:0;
+	left:0;
+	font-size:12px;
+	opacity: 0.75;
+}
+#main_image #caption,
+#main_image #caption p {
+	text-align:left;
+}
+
+/*메인이미지 캡션 타이틀*/
+#caption span{
+	font-size:14px;
+	font-family:돋움;
+	font-weight:bold;
+	color:#ff6000;
+	margin:0;
+	text-decoration:underline;
+}
+
+/*메인이미지 캡션 내용*/
+#caption p{
+	color:#999;
+	font-size:11px;
+	letter-spacing:0;
+	line-height:1.4;
+}
+
+/*썸네일 영역*/
+#thumbnails {
+	float:left;
+	width:175px;
+}
+#thumbnails ul {
+	display:inline;
+	margin:0 auto;
+	overflow:none;
+}
+
+/*썸네일 리스트*/
+#thumbnails ul li {
+	margin:0;
+	width:78px;
+	padding:0px 5px 0 4px;
+	float:left;
+}
+#thumbnails ul li .description a.title {
+	cursor:pointer;
+	line-height:1.2;
+}
+#thumbnails ul li .description a.title:link,
+#thumbnails ul li .description a.title:visited,
+#thumbnails ul li .description a.title:hover,
+#thumbnails ul li .description a.title:visited {
+	text-decoration:none;
+}
+
+/*썸네일 이미지*/
+#thumbnails ul li img {
+	width:70px;
+	height:48px;
+	border:4px solid #ccc;
+	margin-bottom:3px;
+}
+
+/*썸네일 이미지 마우스 오버시*/
+#thumbnails ul li.hover img{
+	border-color:#ff6000;
+	cursor:pointer;
+}
+
+/*썸네일 이미지 활성*/
+#thumbnails ul li.current{
+	cursor:default;
+	color:#000;
+}
+#thumbnails ul li.current img{
+	border-color:#CC33CC;
+}
+
+/*썸네일 이미지 제목*/
+#thumbnails ul li .description{
+	text-align:center !important;
+	height:13px;
+	line-height:1.5 !important;
+	overflow:hidden;
+	margin-bottom:5px;
+	margin-top:-2px;
+	*margin-top:2px;
+}
+#thumbnails ul li .description a.title {
+	display:block;
+	text-align:center !important;
+	font-size:11px;
+	letter-spacing:-1px;
+	color:#555;
+}
+#thumbnails ul li p{
+	display: none;
+}
+
+#main_image #caption .title {
+	font-weight:bold;
+	color:#fff;
+	padding-bottom:5px;
+	font-size:14px !important;
+}
