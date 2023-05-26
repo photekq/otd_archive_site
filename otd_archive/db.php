@@ -1,9 +1,9 @@
 <?php
 
-$host = 'localhost';
-$port = 5432;
-$username = '';
-$password = '';
+$host = 'localhost'; // Replace with your PostgreSQL host
+$port = 5432; // Replace with your PostgreSQL port
+$username = ''; // Replace with your username
+$password = ''; // Replace with your password
 
 $dbname = 'otd_archive';
 
